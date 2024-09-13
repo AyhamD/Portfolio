@@ -8,7 +8,7 @@ export default defineConfig({
   server: {
     proxy: {
       '^/api/SecureWebsite': {
-        target:'https://localhost:7247', // The URL of your .NET backend
+        target:'https://localhost:5197', // The URL of your .NET backend
         secure: false, // Set to false if your backend uses a self-signed certificate
       },
     },
